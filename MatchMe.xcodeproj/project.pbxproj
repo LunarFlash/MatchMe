@@ -45,6 +45,7 @@
 		354DCABF19B3ABA1009281AD /* StatusIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAB919B3ABA1009281AD /* StatusIcon@2x.png */; };
 		354DCAC219B3ADCB009281AD /* Chat_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC019B3ADCB009281AD /* Chat_user.png */; };
 		354DCAC319B3ADCB009281AD /* Chat_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC119B3ADCB009281AD /* Chat_user@2x.png */; };
+		354DCAC519B3B819009281AD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 354DCAC419B3B819009281AD /* README.md */; };
 		35BBA2DC19B2AB62000493E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2DB19B2AB62000493E4 /* main.m */; };
 		35BBA2DF19B2AB62000493E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2DE19B2AB62000493E4 /* AppDelegate.m */; };
 		35BBA2E219B2AB62000493E4 /* MatchMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2E019B2AB62000493E4 /* MatchMe.xcdatamodeld */; };
@@ -196,6 +197,7 @@
 		354DCAB919B3ABA1009281AD /* StatusIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusIcon@2x.png"; sourceTree = "<group>"; };
 		354DCAC019B3ADCB009281AD /* Chat_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat_user.png; sourceTree = "<group>"; };
 		354DCAC119B3ADCB009281AD /* Chat_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat_user@2x.png"; sourceTree = "<group>"; };
+		354DCAC419B3B819009281AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		35BBA2D619B2AB62000493E4 /* MatchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35BBA2DA19B2AB62000493E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35BBA2DB19B2AB62000493E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				35BBA2E019B2AB62000493E4 /* MatchMe.xcdatamodeld */,
 				35BBA2FF19B2ADC9000493E4 /* Assets */,
 				35BBA2D919B2AB62000493E4 /* Supporting Files */,
+				354DCAC419B3B819009281AD /* README.md */,
 			);
 			path = MatchMe;
 			sourceTree = "<group>";
@@ -994,6 +997,7 @@
 				35BBA45719B2AF97000493E4 /* YITestUser.m in Sources */,
 				35BBA2DF19B2AB62000493E4 /* AppDelegate.m in Sources */,
 				35BBA46019B2AFF7000493E4 /* YIChatViewController.m in Sources */,
+				354DCAC519B3B819009281AD /* README.md in Sources */,
 				35BBA44019B2AEE7000493E4 /* YIHomeViewController.m in Sources */,
 				35BBA45F19B2AFF7000493E4 /* YIMatchesViewController.m in Sources */,
 				35BBA2DC19B2AB62000493E4 /* main.m in Sources */,
