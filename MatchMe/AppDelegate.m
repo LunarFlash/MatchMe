@@ -12,7 +12,7 @@
 #import <Mixpanel.h>
 
 
-#define MIXPANEL_TOKEN @"089c8815b3c24971c2d9eceb8da3f6d4"
+#define MIXPANEL_TOKEN @"your mixpanel code (register at mixpanel.com)"
 
 // E578FF - tint color
 
@@ -25,8 +25,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // setup Parse
-    [Parse setApplicationId:@"dZRAQckigLd2pJFIKZoj84bsH3AHK1M2hglsaM3Q"
-                  clientKey:@"QGFLiMRRDEBuRG24L84nm5M9iDkaMm3qgnApGXjh"];
+    [Parse setApplicationId:@"your app id"
+                  clientKey:@"your client key"];
     [PFFacebookUtils initializeFacebook];
     
     [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];

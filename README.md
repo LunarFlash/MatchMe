@@ -39,10 +39,19 @@ pod 'JSMessagesViewController'
 pod 'Mixpanel'
 pod 'LBBlurredImage'
 
+
+
+In AppDelegate.m update the mixpanel token in at the top of the file
+In AppDelegate.m update this line with your own Parse app id and client key:
+[Parse setApplicationId:@"your app id"
+clientKey:@"your client key"];
+In info.plist update the FacebookAppID with your own id
+In info.plist update the last child of URL types with your own facebook app id like so "fb<your id>"
+
+For more detailed instruction:
 Use this instruction to setup Parse:
 https://parse.com/apps/quickstart#parse_data/mobile/ios/native/existing
 
 Use this instruction to setup Facebook authentication with Parse
 http://www.raywenderlich.com/44640/integrating-facebook-and-parse-tutorial-part-1
-
 

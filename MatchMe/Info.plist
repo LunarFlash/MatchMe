@@ -23,14 +23,14 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb758530627519369</string>
+				<string>fbyoufacebookappid</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>758530627519369</string>
+	<string>yourfacebookappid</string>
 	<key>FacebookDisplayName</key>
 	<string>MatchMe</string>
 	<key>LSRequiresIPhoneOS</key>
