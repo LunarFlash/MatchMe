@@ -45,12 +45,12 @@
 		354DCABF19B3ABA1009281AD /* StatusIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAB919B3ABA1009281AD /* StatusIcon@2x.png */; };
 		354DCAC219B3ADCB009281AD /* Chat_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC019B3ADCB009281AD /* Chat_user.png */; };
 		354DCAC319B3ADCB009281AD /* Chat_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC119B3ADCB009281AD /* Chat_user@2x.png */; };
-		354DCAC519B3B819009281AD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 354DCAC419B3B819009281AD /* README.md */; };
 		354DCACD19B3BA33009281AD /* screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC819B3BA33009281AD /* screenshot1.png */; };
 		354DCACE19B3BA33009281AD /* screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCAC919B3BA33009281AD /* screenshot2.png */; };
 		354DCACF19B3BA33009281AD /* screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCACA19B3BA33009281AD /* screenshot3.png */; };
 		354DCAD019B3BA33009281AD /* screenshot4.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCACB19B3BA33009281AD /* screenshot4.png */; };
 		354DCAD119B3BA33009281AD /* screenshot5.png in Resources */ = {isa = PBXBuildFile; fileRef = 354DCACC19B3BA33009281AD /* screenshot5.png */; };
+		354DCAD319B3C18B009281AD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 354DCAD219B3C18B009281AD /* README.md */; };
 		35BBA2DC19B2AB62000493E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2DB19B2AB62000493E4 /* main.m */; };
 		35BBA2DF19B2AB62000493E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2DE19B2AB62000493E4 /* AppDelegate.m */; };
 		35BBA2E219B2AB62000493E4 /* MatchMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35BBA2E019B2AB62000493E4 /* MatchMe.xcdatamodeld */; };
@@ -202,12 +202,12 @@
 		354DCAB919B3ABA1009281AD /* StatusIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusIcon@2x.png"; sourceTree = "<group>"; };
 		354DCAC019B3ADCB009281AD /* Chat_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat_user.png; sourceTree = "<group>"; };
 		354DCAC119B3ADCB009281AD /* Chat_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat_user@2x.png"; sourceTree = "<group>"; };
-		354DCAC419B3B819009281AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = MatchMe/README.md; sourceTree = "<group>"; };
 		354DCAC819B3BA33009281AD /* screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1.png; sourceTree = "<group>"; };
 		354DCAC919B3BA33009281AD /* screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot2.png; sourceTree = "<group>"; };
 		354DCACA19B3BA33009281AD /* screenshot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot3.png; sourceTree = "<group>"; };
 		354DCACB19B3BA33009281AD /* screenshot4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot4.png; sourceTree = "<group>"; };
 		354DCACC19B3BA33009281AD /* screenshot5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot5.png; sourceTree = "<group>"; };
+		354DCAD219B3C18B009281AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		35BBA2D619B2AB62000493E4 /* MatchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35BBA2DA19B2AB62000493E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35BBA2DB19B2AB62000493E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -392,7 +392,6 @@
 		35BBA2CD19B2AB62000493E4 = {
 			isa = PBXGroup;
 			children = (
-				354DCAC419B3B819009281AD /* README.md */,
 				35BBA2D819B2AB62000493E4 /* MatchMe */,
 				35BBA2F219B2AB62000493E4 /* MatchMeTests */,
 				35BBA2D719B2AB62000493E4 /* Products */,
@@ -429,6 +428,7 @@
 				35BBA2E619B2AB62000493E4 /* Main.storyboard */,
 				35BBA2E919B2AB62000493E4 /* Images.xcassets */,
 				35BBA2E019B2AB62000493E4 /* MatchMe.xcdatamodeld */,
+				354DCAD219B3C18B009281AD /* README.md */,
 				35BBA2FF19B2ADC9000493E4 /* Assets */,
 				35BBA2D919B2AB62000493E4 /* Supporting Files */,
 			);
@@ -1033,7 +1033,7 @@
 				35BBA45719B2AF97000493E4 /* YITestUser.m in Sources */,
 				35BBA2DF19B2AB62000493E4 /* AppDelegate.m in Sources */,
 				35BBA46019B2AFF7000493E4 /* YIChatViewController.m in Sources */,
-				354DCAC519B3B819009281AD /* README.md in Sources */,
+				354DCAD319B3C18B009281AD /* README.md in Sources */,
 				35BBA44019B2AEE7000493E4 /* YIHomeViewController.m in Sources */,
 				35BBA45F19B2AFF7000493E4 /* YIMatchesViewController.m in Sources */,
 				35BBA2DC19B2AB62000493E4 /* main.m in Sources */,
