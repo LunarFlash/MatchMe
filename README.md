@@ -7,15 +7,15 @@ Once 2 users are matched, they can proceed to start a chatroom and send messages
 This app uses Parse as the backend to store user data, and uses Facebook's API to pull user information such as age, location,
 and relationship status. 
 
-![alt tag](https://github.com/LunarFlash/Match-Me/blob/master/MatchMe/screenshot1.png)
+![alt tag](https://github.com/LunarFlash/MatchMe/blob/master/MatchMe/screenshot1.png)
 
-![alt tag](https://github.com/LunarFlash/Match-Me/blob/master/MatchMe/screenshot2.png)
+![alt tag](https://github.com/LunarFlash/MatchMe/blob/master/MatchMe/screenshot2.png)
 
-![alt tag](https://github.com/LunarFlash/Match-Me/blob/master/MatchMe/screenshot3.png)
+![alt tag](https://github.com/LunarFlash/MatchMe/blob/master/MatchMe/screenshot3.png)
 
-![alt tag](https://github.com/LunarFlash/Match-Me/blob/master/MatchMe/screenshot4.png)
+![alt tag](https://github.com/LunarFlash/MatchMe/blob/master/MatchMe/screenshot4.png)
 
-![alt tag](https://github.com/LunarFlash/Match-Me/blob/master/MatchMe/screenshot5.png)
+![alt tag](https://github.com/LunarFlash/MatchMe/blob/master/MatchMe/screenshot5.png)
 
 
 Match Me app use the following libraries:
