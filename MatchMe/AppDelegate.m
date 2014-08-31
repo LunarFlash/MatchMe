@@ -12,7 +12,7 @@
 #import <Mixpanel.h>
 
 
-#define MIXPANEL_TOKEN @"089c8815b3c24971c2d9eceb8da3f6d4"
+#define MIXPANEL_TOKEN @"your token"
 
 // E578FF - tint color
 
