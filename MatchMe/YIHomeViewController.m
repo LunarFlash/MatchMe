@@ -12,6 +12,7 @@
 #import "YITestUser.h"
 #import "YIProfileViewController.h"
 #import "YIMatchViewController.h"
+#import <Mixpanel.h>
 
 @interface YIHomeViewController () <YIMatchViewControllerDelegate, YIProfileViewControllerDelegate>
 
@@ -120,10 +121,18 @@
 
 #pragma mark - IBActions
 - (IBAction)likeButtonPressed:(UIButton *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance]; // singleton
+    [mixpanel track:@"Like"];
+    [mixpanel flush];
+    
     [self checkLike];
 }
 
 - (IBAction)dislikeButtonPressed:(UIButton *)sender {
+    Mixpanel *mixpanel = [Mixpanel sharedInstance]; 
+    [mixpanel track:@"Dislike"];
+    [mixpanel flush];
+    
     [self checkDislike];
 }
 
