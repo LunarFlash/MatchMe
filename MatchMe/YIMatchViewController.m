@@ -58,13 +58,16 @@
 
 // When user press this button it should show all the chats, because this is a model transition, we need to use delegate
 - (IBAction)viewChatsButtonPressed:(UIButton *)sender {
-    NSLog(@"viewChatsButtonPressed");
+    NSLog(@"viewChatsButtonPressed...");
     [self.delegate presentMatchesViewController];
 }
 
 - (IBAction)keepSearchingButtonPressed:(UIButton *)sender {
-    NSLog(@"keepSearchingButtonPressed");
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"keepSearchingButtonPressed...");
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"well this is awkward...");
+
+    }];
 }
 
 

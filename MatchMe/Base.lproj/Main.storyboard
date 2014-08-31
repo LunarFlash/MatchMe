@@ -142,7 +142,7 @@
                         <outlet property="photoImageView" destination="dub-q1-xxq" id="LGy-9V-R35"/>
                         <outlet property="settingsBarButtonItem" destination="NvY-Hx-bWG" id="7AK-m9-v69"/>
                         <segue destination="S7B-Xn-2nv" kind="push" identifier="homeToProfileSegue" id="SKi-kN-rGN"/>
-                        <segue destination="o2L-Ql-6Om" kind="custom" identifier="homeToMatchSegue" id="SBn-nN-Rkr"/>
+                        <segue destination="o2L-Ql-6Om" kind="modal" identifier="homeToMatchSegue" id="SBn-nN-Rkr"/>
                         <segue destination="bwf-kP-01V" kind="push" identifier="homeToMatchesSegue" id="TSo-M9-GO9"/>
                     </connections>
                 </viewController>
