@@ -197,7 +197,7 @@
 		354DCAB919B3ABA1009281AD /* StatusIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusIcon@2x.png"; sourceTree = "<group>"; };
 		354DCAC019B3ADCB009281AD /* Chat_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat_user.png; sourceTree = "<group>"; };
 		354DCAC119B3ADCB009281AD /* Chat_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat_user@2x.png"; sourceTree = "<group>"; };
-		354DCAC419B3B819009281AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		354DCAC419B3B819009281AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = MatchMe/README.md; sourceTree = "<group>"; };
 		35BBA2D619B2AB62000493E4 /* MatchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35BBA2DA19B2AB62000493E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35BBA2DB19B2AB62000493E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -361,6 +361,7 @@
 		35BBA2CD19B2AB62000493E4 = {
 			isa = PBXGroup;
 			children = (
+				354DCAC419B3B819009281AD /* README.md */,
 				35BBA2D819B2AB62000493E4 /* MatchMe */,
 				35BBA2F219B2AB62000493E4 /* MatchMeTests */,
 				35BBA2D719B2AB62000493E4 /* Products */,
@@ -399,7 +400,6 @@
 				35BBA2E019B2AB62000493E4 /* MatchMe.xcdatamodeld */,
 				35BBA2FF19B2ADC9000493E4 /* Assets */,
 				35BBA2D919B2AB62000493E4 /* Supporting Files */,
-				354DCAC419B3B819009281AD /* README.md */,
 			);
 			path = MatchMe;
 			sourceTree = "<group>";
