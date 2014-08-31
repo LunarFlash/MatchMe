@@ -41,9 +41,8 @@
 
 
 // background images views
+@property (nonatomic, strong) UIImageView *backgroundImageView; // //transparent black image size of the screen
 
-@property (nonatomic, strong) UIImageView *backgroundImageView;
-@property (nonatomic, strong) UIImageView *foregroundImageView; //transparent black image size of the screen
 
 @end
 

@@ -69,6 +69,7 @@
                 
                 self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:data]];
                 
+                
                 [self.backgroundImageView setImageToBlur:self.backgroundImageView.image blurRadius:kLBBlurredImageDefaultBlurRadius completionBlock:nil];
                 self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
                 
@@ -77,8 +78,6 @@
                 
                 [self.view addSubview:self.backgroundImageView];
                 [self.view sendSubviewToBack:self.backgroundImageView];
-                
-                
                 
             }];
         }
@@ -143,7 +142,7 @@
     
     // set cell background color to clear
     cell.backgroundColor = [UIColor clearColor];
-    
+    cell.imageView.layer.cornerRadius = 25.0;
     
     return cell;
 }

@@ -14,6 +14,7 @@
 
 #define MIXPANEL_TOKEN @"089c8815b3c24971c2d9eceb8da3f6d4"
 
+// E578FF
 
 @interface AppDelegate ()
 
@@ -41,7 +42,7 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:
      @{NSForegroundColorAttributeName : [UIColor colorWithRed:229/255.0 green:120/255.0 blue:255/255.0 alpha:1.0], NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0]}];
-    
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
     
     
     return YES;
