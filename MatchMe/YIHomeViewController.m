@@ -13,6 +13,7 @@
 #import "YIProfileViewController.h"
 #import "YIMatchViewController.h"
 #import <Mixpanel.h>
+#import <LBBlurredImage/UIImageView+LBBlurredImage.h>
 
 @interface YIHomeViewController () <YIMatchViewControllerDelegate, YIProfileViewControllerDelegate>
 
@@ -36,9 +37,13 @@
 // container views
 
 @property (strong, nonatomic) IBOutlet UIView *labelContainerView;
-
 @property (strong, nonatomic) IBOutlet UIView *buttonContainerView;
 
+
+// background images views
+
+@property (nonatomic, strong) UIImageView *backgroundImageView;
+@property (nonatomic, strong) UIImageView *foregroundImageView; //transparent black image size of the screen
 
 @end
 
@@ -83,9 +88,12 @@
 
 - (void)setupViews {
     [self addShadowForView:self.labelContainerView];
+    [self.labelContainerView setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
+    [self.buttonContainerView setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
     [self addShadowForView:self.buttonContainerView];
     self.photoImageView.layer.masksToBounds = YES;
     self.view.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+    
 }
 
 - (void)addShadowForView:(UIView *)view {
@@ -116,7 +124,6 @@
         matchVC.matchedUserImage = self.photoImageView.image;
         matchVC.delegate = self;
     }
-    
 }
 
 #pragma mark - IBActions
@@ -129,7 +136,7 @@
 }
 
 - (IBAction)dislikeButtonPressed:(UIButton *)sender {
-    Mixpanel *mixpanel = [Mixpanel sharedInstance]; 
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
     [mixpanel track:@"Dislike"];
     [mixpanel flush];
     
@@ -147,7 +154,22 @@
     [self performSegueWithIdentifier:@"homeToMatchesSegue" sender:self];
 }
 
+
+
+
 #pragma mark - Helper Methods
+- (void) setupBackgroundViews {
+    UIImage *background = self.photoImageView.image;
+    self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
+    //self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.backgroundImageView setImageToBlur:background blurRadius:kLBBlurredImageDefaultBlurRadius completionBlock:nil];
+    self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    [self.view addSubview:self.backgroundImageView];
+    [self.view sendSubviewToBack:self.backgroundImageView];
+}
+
+
 - (void)queryForCurrentPhotoIndex {
     if ([self.photos count] > 0) {
         self.photo = self.photos[self.currentPhotoIndex];
@@ -157,6 +179,9 @@
                 UIImage *image = [UIImage imageWithData:data];
                 self.photoImageView.image = image;
                 [self updateView];
+                
+                [self setupBackgroundViews];
+                
             } else NSLog(@"Failed to download photo:%@", error);
         }];
         
