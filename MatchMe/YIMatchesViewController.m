@@ -10,12 +10,22 @@
 #import "YIConstants.h"
 #import "YIChatViewController.h"
 #import <Parse/Parse.h>
+#import <LBBlurredImage/UIImageView+LBBlurredImage.h>
 
 @interface YIMatchesViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSMutableArray *availableChatrooms;
+
+
+
+// background images views
+
+@property (nonatomic, strong) UIImageView *backgroundImageView;
+@property (nonatomic, strong) UIImageView *foregroundImageView; //transparent black image size of the screen
+
+
 @end
 
 @implementation YIMatchesViewController
@@ -37,6 +47,46 @@
     self.tableView.dataSource = self;
     
     [self updateAvailableChatRooms];
+    [self setupBackground];
+}
+
+
+- (void) setupBackground {
+    
+    
+    // download my own image
+    
+    
+    
+    // Get profile picture
+    PFQuery *query = [PFQuery queryWithClassName:kYIPhotoClassKey];
+    [query whereKey:kYIPhotoUserKey equalTo:[PFUser currentUser]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if ([objects count] > 0) {
+            PFObject *photo = objects[0];
+            PFFile *pictureFile = photo[kYIPhotoPictureKey];
+            [pictureFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                
+                self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:data]];
+                
+                [self.backgroundImageView setImageToBlur:self.backgroundImageView.image blurRadius:kLBBlurredImageDefaultBlurRadius completionBlock:nil];
+                self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+                
+                
+                [self.tableView setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
+                
+                [self.view addSubview:self.backgroundImageView];
+                [self.view sendSubviewToBack:self.backgroundImageView];
+                
+                
+                
+            }];
+        }
+    }];
+
+   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,6 +140,10 @@
             }];
         }
     }];
+    
+    // set cell background color to clear
+    cell.backgroundColor = [UIColor clearColor];
+    
     
     return cell;
 }

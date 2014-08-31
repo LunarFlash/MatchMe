@@ -27,11 +27,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-4A-6M2">
-                                <rect key="frame" x="93" y="128" width="134" height="94"/>
+                                <rect key="frame" x="60" y="104" width="200" height="200"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-fY-BCZ">
                                 <rect key="frame" x="150" y="414" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-tk-loX">
+                                <rect key="frame" x="112" y="312" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.89857247600000001" green="0.46913012030000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -563,8 +569,8 @@
         <image name="Facebook.png" width="200" height="25"/>
         <image name="InfoIcon.png" width="39" height="37"/>
         <image name="LikeIcon.png" width="55" height="37"/>
-        <image name="Logo.png" width="134" height="94"/>
-        <image name="SettingIcon.png" width="22" height="20"/>
+        <image name="Logo.png" width="150" height="150"/>
+        <image name="SettingIcon.png" width="24" height="24"/>
         <image name="StatusIcon.png" width="19" height="18"/>
         <image name="UserImage.png" width="320" height="221"/>
         <image name="location.png" width="8" height="10"/>

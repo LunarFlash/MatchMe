@@ -105,6 +105,18 @@
     
 }
 
+- (void) setupBackgroundViews {
+    UIImage *background = self.photoImageView.image;
+    self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
+    //self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.backgroundImageView setImageToBlur:background blurRadius:kLBBlurredImageDefaultBlurRadius completionBlock:nil];
+    self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    [self.view addSubview:self.backgroundImageView];
+    [self.view sendSubviewToBack:self.backgroundImageView];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -158,16 +170,7 @@
 
 
 #pragma mark - Helper Methods
-- (void) setupBackgroundViews {
-    UIImage *background = self.photoImageView.image;
-    self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
-    //self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
-    [self.backgroundImageView setImageToBlur:background blurRadius:kLBBlurredImageDefaultBlurRadius completionBlock:nil];
-    self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
-    
-    [self.view addSubview:self.backgroundImageView];
-    [self.view sendSubviewToBack:self.backgroundImageView];
-}
+
 
 
 - (void)queryForCurrentPhotoIndex {
